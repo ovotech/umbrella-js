@@ -16,15 +16,10 @@
 <div class="col-md-6">
     <div class="panel panel-default">
         <div class="panel-heading">
-            Events
+            Versions
         </div>
         <div class="panel-body">
             <table class="table">
-                <tr>
-                    <th>VERSION</th>
-                    <th>DATE</th>
-                    <th>COVERAGE</th>
-                </tr>
                 <tr ng-repeat="version in versions">
                     <td><span class="label label-primary">{{version.version}}</span></td>
                     <td>{{version.date | date}}</td>
