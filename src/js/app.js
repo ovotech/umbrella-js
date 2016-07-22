@@ -7,6 +7,8 @@ import HomeController from './HomeController';
 import ProjectController from './ProjectController';
 import ProjectService from './ProjectService'
 
+import '../../node_modules/ovo-bootstrap/dist/css/ovo-bootstrap.css';
+
 angular.module('umbrella', ['ngRoute'])
     .config(baseConfig)
     .config(routing)
