@@ -1,0 +1,5 @@
+#!/bin/bash
+webpack
+s3-deploy 'index.html' --region eu-west-1 --bucket umbrella.ovotech.org.uk
+s3-deploy 'favicon.ico' --region eu-west-1 --bucket umbrella.ovotech.org.uk
+s3-deploy './target/**' --region eu-west-1 --bucket umbrella.ovotech.org.uk
