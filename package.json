@@ -4,7 +4,7 @@
   "description": "",
   "scripts": {
     "start": "webpack-dev-server --history-api-fallback --inline --progress",
-    "deploy": "s3-deploy './target/**' --region eu-west-1 --bucket umbrella-js && s3-deploy 'index.html' --region eu-west-1 --bucket umbrella-js"
+    "deploy": "webpack && s3-deploy './target/**' --region eu-west-1 --bucket umbrella.ovoenergy.com && s3-deploy 'index.html' --region eu-west-1 --bucket umbrella.ovoenergy.com"
   },
   "dependencies": {
     "angular": "^1.5.6",
