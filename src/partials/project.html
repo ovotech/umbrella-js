@@ -1,0 +1,36 @@
+<h3><a href="/" style="text-decoration:none"><span class="obs-icon-chevron-left" style="vertical-align:middle"></span></a> {{project}}</h3>
+
+<div class="col-md-6">
+    <div class="panel panel-default">
+        <div class="panel-heading">Packages</div>
+        <div class="panel-body">
+            <table class="table">
+                <tr ng-repeat="package in packages">
+                    <td><code>{{package.packageName}}</code></td>
+                    <td><span class="badge">{{package.coverage}}%</span></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+<div class="col-md-6">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            Events
+        </div>
+        <div class="panel-body">
+            <table class="table">
+                <tr>
+                    <th>VERSION</th>
+                    <th>DATE</th>
+                    <th>COVERAGE</th>
+                </tr>
+                <tr ng-repeat="version in versions">
+                    <td><span class="label label-primary">{{version.version}}</span></td>
+                    <td>{{version.date | date}}</td>
+                    <td><span class="badge">{{version.coverage}}%</span></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
