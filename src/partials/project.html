@@ -1,27 +1,29 @@
-<h3><a href="/#/" style="text-decoration:none"><span class="obs-icon-chevron-left" style="vertical-align:middle"></span></a> {{project}}</h3>
+<h4><a href="/#/" style="text-decoration:none"><span class="obs-icon-chevron-left"></span></a>{{project}}</h4>
 
-<div class="col-md-6">
-    <div class="panel panel-default">
-        <div class="panel-heading">Packages</div>
-        <table class="table">
-            <tr ng-repeat="package in packages">
-                <td><code>{{package.packageName}}</code></td>
-                <td><span class="badge">{{package.coverage}}%</span></td>
-            </tr>
-        </table>
-    </div>
-</div>
-<div class="col-md-6">
-    <div class="panel panel-default">
-        <div class="panel-heading">
-            Versions
+<div>
+    <div class="col-md-6">
+        <div class="panel panel-default">
+            <div class="panel-heading">Packages</div>
+            <table class="table">
+                <tr ng-repeat="package in packages">
+                    <td><code>{{package.packageName}}</code></td>
+                    <td><span class="badge">{{package.coverage}}%</span></td>
+                </tr>
+            </table>
         </div>
-        <table class="table">
-            <tr ng-repeat="version in versions">
-                <td><span class="label label-primary">{{version.version}}</span></td>
-                <td>{{version.date | date}}</td>
-                <td><span class="badge">{{version.coverage}}%</span></td>
-            </tr>
-        </table>
+    </div>
+    <div class="col-md-6">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                Versions
+            </div>
+            <table class="table">
+                <tr ng-repeat="version in versions">
+                    <td><span class="label label-primary">{{version.version}}</span></td>
+                    <td>{{version.date | date}}</td>
+                    <td><span class="badge">{{version.coverage}}%</span></td>
+                </tr>
+            </table>
+        </div>
     </div>
 </div>
