@@ -4,15 +4,16 @@
 <head>
     <script src="target/bundle.js"></script>
     <title>Umbrella</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body ng-app="umbrella">
     <div class="bg-primary section">
-        <div class="container hidden-xs">
+        <div class="container hidden-xs hidden-sm">
             <h1>Umbrella</h1>
-            <p class="subheading hidden-xs">The centralised tool for examining unit test coverage</p>
+            <p class="subheading hidden-xs hidden-sm">The centralised tool for examining unit test coverage</p>
         </div>
-        <img class="center-block visible-xs-block" src="favicon.ico" width="40px"/>
+        <img class="center-block visible-xs-block visible-sm-block" src="favicon.ico" width="40px"/>
     </div>
     <div class="container">
         <div ng-view/>
